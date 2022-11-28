@@ -3,8 +3,6 @@ import boto3
 from boto3.dynamodb.conditions import Key
 dynamo_client = boto3.resource('dynamodb')
 
-# import requests
-
 def get_count(table, pk, column):
     table = dynamo_client.Table(table)
     response = table.query(
@@ -35,14 +33,6 @@ def lambda_handler(event, context):
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """
 
-    # try:
-    #     ip = requests.get("http://checkip.amazonaws.com/")
-    # except requests.RequestException as e:
-    #     # Send some context about this error to Lambda Logs
-    #     print(e)
-
-    #     raise e
-
     get_count('shivam-dynamodb', 'ID', 'visitor_count')
 
     return {
@@ -50,11 +40,5 @@ def lambda_handler(event, context):
         'headers': { "Access-Control-Allow-Origin": "*", 
                      "Access-Control-Allow-Methods": "*",
 			         "Access-Control-Allow-Headers": "*", },
-        #'body': json.dumps({"count": str(get_count('shivam-dynamodb', 'ID', 'visitor_count'))})
         "body": get_count('shivam-dynamodb', 'ID', 'visitor_count')
-        # "body": json.dumps({
-        #     #"message": "hello world",
-        #     "count": "2",
-        #     # "location": ip.text.replace("\n", "")
-        # }),
     }
