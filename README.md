@@ -1,14 +1,19 @@
 # Cloud Resume Challenge on Amazon Web Service
-To be updated
+- To create a website showing your CV, hosted on AWS using various AWS services.
 
-## Requirement for this challenge
-To be updated
+- Techincal Requirements:
+    - Front-end: HTML, CSS and JavaScript files in S3, CloudFront
+    - Back-end: API Gateway, Lambda with Python, DynamoDB
+    - Infrastructure as code (Terraform, SAM, CDK)
+    - CICD (continuous integration, continuous deployment) with Github Actions
 
+## Let's Start the challenge
 
-## Lets Start the challenge
+### 1. Mindmap + Architecture
 
-### 1. Architecture + Mindmap
-To be updated
+![CRC Architecture](/images/mindmap_aws_challenge.png)
+
+![CRC Architecture](/images/aws_crc_architecture.png)
 
 I have decided to create my entire stack as IaC and I choose AWS SAM (Serverless Application Model)
 
