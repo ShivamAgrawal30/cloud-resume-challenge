@@ -13,7 +13,7 @@
 
 ![CRC Mindmap](/images/mindmap_aws_challenge.jpg)
 
-![CRC Architecture](/images/aws_crc_architecture.png)
+![CRC AWS Architecture](/images/crc_aws_architecture.png)
 
 ## Final Output
 - Link to my CV website - https://d3n4j6eaq72lpc.cloudfront.net/
