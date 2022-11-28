@@ -11,37 +11,17 @@
 
 ### 1. Mindmap + Architecture
 
-![CRC Architecture](/images/mindmap_aws_challenge.png)
+![CRC Mindmap](/images/mindmap_aws_challenge.jpg)
 
 ![CRC Architecture](/images/aws_crc_architecture.png)
 
-I have decided to create my entire stack as IaC and I choose AWS SAM (Serverless Application Model)
-
-### 2. HTML/CSS 
-To be updated
-
-### 3. Domain Registration 
-To be updated
-
-### 4. Make website functional
-To be updated
-
-### 5. Backend configuration
-To be updated
-
-### 6. Infrastructure as a Code (IaC)
-To be updated
-
-
-### 7. CI/CD Pipeline - GitHub Actions
-To be updated
-
-
-### 8. Visitor Count
-To be updated
-
 ## Final Output
-To be updated
+- Link to my CV website - https://d3n4j6eaq72lpc.cloudfront.net/
 
 ### Areas to improvise
-To be updated
+- Could have integrated Route53.
+- Could have done unit testing, integration testing etc.
+- Could have used Terraform (IaC) since it's not any cloud platform specific.
+- Make CI/CD more robust
+- Remove hardcoding values and use configuration or values.yaml file.
+- Throttle API requests
